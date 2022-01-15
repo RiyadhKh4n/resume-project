@@ -33,6 +33,10 @@
     background-color: #95A9FF;
 }
 
+.bg-color-contact{
+    background: #fff;
+}
+
 /* ----------------------------------------Special padding/margins/text */
 
 h1,
@@ -204,14 +208,15 @@ footer{
 .social-links li a i{
     width: 32px;
     height:32px;
-    padding:12px;
+    /* padding:12px; */
+    padding-top: 12px;
     border-radius: 50%;
     font-size: 13px;
     line-height: 7px;
     text-align: center;
     color:#fafafa;
     background: #8f8f8f;
-
+    
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -221,7 +226,6 @@ footer{
 .social-links li a i:hover{
     background: #95A9FF;
 }
-
 #footer-details{
     padding:20px;
 }
@@ -341,4 +345,38 @@ footer{
 
 .history-item{
     margin-bottom: 30px;
+}
+
+/* ----------------------------------------Contact Form */
+
+
+.contact-heading{
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center-form{
+    padding-top:10px;
+    margin:0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"]{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fafafa;
+    background-color:#95A9FF ;
+}
+
+/* ----------------------------------------Media Queries */
+
+@media(min-width: 992px){
+    .center-form{
+        padding-top:30px;
+        min-height: 240px;
+        margin:0 auto;
+        max-width: 50%;
+    }
 }
